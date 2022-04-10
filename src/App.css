@@ -1,0 +1,81 @@
+/* #layout
+{
+  top:0px;
+  left: 0px;
+  position: absolute;
+  width:100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  z-index: -1;
+} */
+
+#frontpagelayout 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+ height: 100vh;
+ background-image: url('./image/wallpaper.jpg');
+ background-size: 100% 100%;
+  
+}
+
+#frontpageoption2 
+{
+  width: 500px;  
+  border:1px solid rgba(0, 0, 0, 0.616);
+  border-radius: 5px;
+  padding: 20px;
+ background-color: white;
+
+}
+
+#frontpageoption1
+{
+  width: 300px;  
+  border:1px solid rgba(0, 0, 0, 0.616);
+  border-radius: 5px;
+  padding: 20px;
+ background-color: white;
+
+}
+
+/* #frontpageoption1 input
+{
+ width:80%;
+} */
+#frontpageoptions button
+{
+  margin-right:10px;
+  margin-bottom: 10px;
+ background-color: white;
+  
+}
+#frontpageoptions button:hover
+{
+ 
+ background-color: gray;
+  
+}
+#frontpageoption1
+{
+  display: none;
+}
+
+#frontpageoption2 input:focus{
+  box-shadow: 0px 0px 1px 2px lightblue;
+}
+
+#buttonclass
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.validationwarning
+{
+  color: red;
+  text-align: center;
+}
