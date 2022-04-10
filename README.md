@@ -6,7 +6,7 @@
 
 ## backend
 
-> https://github.com/hrithikpasumarthi/expirification/tree/backend
+> https://github.com/hrithikpasumarthi/expirification/tree/userbackend
 
 ## adminFrontEnd
 
