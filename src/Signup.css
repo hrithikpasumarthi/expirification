@@ -1,0 +1,116 @@
+#layout
+{
+    background-image:url('./image/modifiedwallpaper.png');
+    background-size: 100% 100%;
+}
+#navbar
+{
+    display: flex;
+    flex-direction: row-reverse;
+    height:50px;
+}
+#navbar div{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#navbar div:hover
+{
+    transform: scale(1.5);
+}
+
+
+#main
+{
+height:91vh;
+}
+
+#totallayout
+{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 0px 5px 10px rgba(0, 0,0, 0.4);
+}
+#leftpart
+{
+width: 70%;
+background-image: inherit;
+background-size: 100% 100%;
+}
+#leftpart img
+{
+    display: none;
+width:100%;
+height:100%;
+}
+
+#righthalf
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: inherit;
+    background-size: 100% 100%;
+}
+
+#rightpart
+{
+width:90%;
+display: flex;
+padding: 15px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+
+#rightpart input
+{
+    width:min(85%,250px);
+    margin-bottom: 20px;
+}
+#rightpart input:focus
+{
+   box-shadow: 0px 0px 2px 2px lightblue;
+}
+
+.warning
+{
+    margin-top: -20px;
+    color: red;
+}
+@media (max-width:850px) {
+    #navbar div{
+        color:white;
+    }
+    #layout
+    {
+    background-image:url('./image/wallpaper.PNG');
+    background-size: 100% 100%;
+    }
+    #leftpart
+    {
+        display: none;
+    }
+    #righthalf
+    {
+        width:100%;
+        background-image: inherit;
+        background-size: 100% 100%;
+    }
+    #rightpart
+    {
+        width:80%;
+    }
+    #righthalf h4{
+        color: white;
+    }
+    
+}

@@ -1,0 +1,257 @@
+
+#dashboardnavbar
+{
+    position: fixed;
+    top:0px;
+    width:100%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(75, 75, 240, 1);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#dashboardnavbar div
+{
+   padding: 10px;
+   fill: white;
+}
+
+#dashboardnotifications
+{
+position: fixed;
+display: none;
+right:60px;
+width:250px;
+border-radius: 7px;
+background-color: white;
+border:1px solid black;
+z-index:2;
+font-size: 14px;
+}
+#dashboardnotificationsheading
+{
+    padding: 2px;
+    border-bottom:1px solid rgba(187, 187, 187, 0.404);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 7px;
+    font-weight:bold ;
+
+}
+
+#dashboardnotifications > div
+{
+    padding: 5px;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.404);
+    margin:2px;
+    margin-bottom: 7px;
+}
+
+#narrow
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* background-color: #ccc; */
+    margin-bottom: 0px;
+    fill: rgba(184, 153, 153, 0.829);
+    cursor: pointer;
+    border-radius: 7px;
+
+} 
+
+#arrow
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    fill: rgba(0, 0, 0, 0.678);
+    cursor: pointer;
+} 
+
+#nleft
+{
+   flex:1;
+}
+
+#left
+{
+    flex:1;
+}
+
+#smalldashboardsidebar div
+{
+    fill:white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#smalldashboardsidebar
+{
+position: fixed;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+top:0px;
+left: 0px;
+height:100%;
+width:50px;
+background-color: rgb(87, 82, 82);
+z-index: 3;
+cursor: pointer;
+}
+
+#largedashboardsidebar div
+{
+    fill:white;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: White;
+
+}
+
+#largedashboardsidebar
+{
+visibility: hidden;
+position: fixed;
+display: flex;
+flex-direction: column;
+top:0px;
+left: 0px;
+height:100%;
+width:150px;
+background-color: rgb(87, 82, 82);
+z-index: 3;
+cursor: pointer;
+}
+
+#dashboardsidebaricon
+{
+    align-self: flex-end;
+}
+
+#dashboardcardcontainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin-left: 10%;
+    margin-top: 50px;
+    height: 100%;
+}
+
+.dashboardcard
+{
+    height:330px;
+    width:29%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px 5px gray;
+    margin: 10px;
+    background-color: white;
+}
+
+.dashboardcardimagepart
+{
+    position: relative;
+    height:55%;
+    width: 100%;
+}
+
+.dashboardcardimage
+{
+    height:100%;
+    width: 100%;
+   
+}
+
+.dashboardcardimagecontent
+{
+    position: absolute;
+    padding: 0px 5px 5px 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: red;
+    border:2px solid red;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.dashboardcontent ul
+{
+    list-style: none;
+}
+@media (max-width:880px) {
+    .dashboardcard
+    {
+        width: 43%;
+    }
+    
+}
+
+@media (max-width:650px) {
+    #dashboardcardcontainer
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .dashboardcard
+    {
+        width: 80%;
+        height:200px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dashboardcardimagepart
+    {
+    height:100%;
+    width: 50%;
+    }
+
+    .dashboardcardimage
+{
+    height:100%;
+    width: 100%;
+   
+}
+}
+
+@media (max-width:450px) {
+    
+    #dashboardcardcontainer
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .dashboardcard
+    {
+        flex-direction: column;
+        width: 70%;
+        height:330px;
+       
+    }
+
+    .dashboardcardimagepart
+    {
+    height:50%;
+    width: 100%;
+    }
+
+    .dashboardcardimage
+{
+    height:100%;
+    width: 100%;
+   
+}
+    
+}
